@@ -49,3 +49,4 @@ if __name__ == "__main__":
             "Automatización con Python y Selenium"]
     
     results = search_on_duckduckgo(terms)
+    df = pd.DataFrame(results)
