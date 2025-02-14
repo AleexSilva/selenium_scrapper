@@ -42,3 +42,4 @@ def search_on_duckduckgo(search_terms):
                     })
             except Exception:
                 continue
+
