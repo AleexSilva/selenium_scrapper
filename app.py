@@ -43,3 +43,9 @@ def search_on_duckduckgo(search_terms):
             except Exception:
                 continue
 
+if __name__ == "__main__":
+    terms=["Automatización con Python",
+            "Automatización con Selenium",
+            "Automatización con Python y Selenium"]
+    
+    results = search_on_duckduckgo(terms)
