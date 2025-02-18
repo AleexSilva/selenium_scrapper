@@ -42,6 +42,9 @@ def search_on_duckduckgo(search_terms):
                     })
             except Exception:
                 continue
+        
+        driver.quit()
+        return global_reuslts
 
 if __name__ == "__main__":
     terms=["Automatización con Python",
