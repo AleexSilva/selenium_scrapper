@@ -56,4 +56,6 @@ if __name__ == "__main__":
     
     results = search_on_duckduckgo(terms)
     df = pd.DataFrame(results)
+    df.to_csv("data/search_selenium.csv",index=False)
+    print('Search Complete! All results saved in "results.csv"')
 
