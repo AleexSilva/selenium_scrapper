@@ -44,9 +44,10 @@ def search_on_duckduckgo(search_terms):
                 continue
         
         driver.quit()
-        return global_reuslts
         records = len(global_reuslts)
         print(f'Number of records ingested: {records}')
+        return global_reuslts
+
 
 if __name__ == "__main__":
     terms=["Automatización con Python",
@@ -55,3 +56,4 @@ if __name__ == "__main__":
     
     results = search_on_duckduckgo(terms)
     df = pd.DataFrame(results)
+
