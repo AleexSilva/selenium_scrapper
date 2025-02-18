@@ -45,6 +45,7 @@ def search_on_duckduckgo(search_terms):
         
         driver.quit()
         return global_reuslts
+        print(f'Number of records ingested: {len(global_reuslts)}')
 
 if __name__ == "__main__":
     terms=["Automatización con Python",
